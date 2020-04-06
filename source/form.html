@@ -30,6 +30,88 @@
       </nav>
     </header>
     <main>
+      <form class="form" method="post">
+        <div class="form__intro">
+          <h2 class="form__title">Подбор программы</h2>
+          <p class="form__title">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
+        <fieldset class="form__general-issue general-issue">
+          <ul class="general-issue__list">
+            <li class="general-issue__item">
+              <label class="general-issue__name">Имя:<input class="general-issue__input" type="text" name="name" placeholder="Барсик*"></label>
+            </li>
+            <li class="general-issue__item">
+              <label class="general-issue__weight">Вес<input class="general-issue__input" type="text" name="weight" placeholder="7"></label>
+            </li>
+            <li class="general-issue__item">
+              <label class="general-issue__age">Возраст<input class="general-issue__input" type="text" name="age" placeholder="7"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__purpose purpose">
+          <ul class="purpose__list">
+            <li class="purpose__item">
+              <input class="purpose__input" type="radio" name="losing-weight" value="weight" id="losing-weight" checked>
+              <label class="purpose__response" for="losing-weight">Похудение</label>
+            </li>
+            <li class="purpose__item">
+              <input class="purpose__input" type="radio" name="weight-set" value="weight-set" id="weight-set">
+              <label class="purpose__response" for="weight-set">Набор массы</label>
+            </li>
+            <li class="purpose__item">
+              <input class="purpose__input" type="radio" name="ignorance" value="ignorance" id="ignorance">
+              <label class="purpose__response" for="ignorance">Не знаю (нужен твой совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__сontact-details сontact-details">
+          <legend class="сontact-details">Контактные данные (владельца кота)</legend>
+          <ul class="сontact-details__list">
+            <li class="сontact-details__item">
+              <label class="сontact-details__mail">E-MAIL:<input class="сontact-details__input" type="text" name="mail" placeholder="kuklachev@gmail.com"></label>
+            </li>
+            <li class="сontact-details__item">
+              <label class="сontact-details__telephone">Телефон<input class="сontact-details__input" type="text" name="telephone" placeholder="8(960)900-60-90"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__textarea textarea">
+          <legend class="textarea__legend">Комментарий</legend>
+          <textarea name="comment" rows="20" id="textarea__content">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+        <fieldset class="form__last-fieldset last-fieldset">
+          <legend class="last-fieldset__legend">Дополнительно</legend>
+          <ul class="last-fieldset__list">
+            <li class="last-fieldset__item">
+              <input class="last-fieldset__input" type="checkbox" name="sugar" value="sugar" id="sugar-substitute">
+              <label class="last-fieldset__label" for="sugar-substitute">Сахарозаменитель</label>
+            </li>
+            <li class="last-fieldset__item">
+              <input class="last-fieldset__input" type="checkbox" name="water" value="water" id="drinking-water" checked>
+              <label class="last-fieldset__label" for="drinking-water">Обгорел на пляже</label>
+            </li>
+            <li class="last-fieldset__item">
+              <input class="last-fieldset__input" type="checkbox" name="milk" value="milk" id="milk">
+              <label class="last-fieldset__label" for="milk">Молоко</label>
+            </li>
+            <li class="last-fieldset__item">
+              <input class="last-fieldset__input" type="checkbox" name="vitamins" value="vitamins" id="vitamins">
+              <label class="last-fieldset__label" for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__btn-block">
+          <button class="form__btn" type="submit" value="Отправить форму">Отправить форму</button>
+          <small class="form__legend"><sup>*</sup> — обязательные<span> для заполнения</span> поля</small>
+        </div>
+      </form>
+      <section class="information">
+        <div class="information__content">
+          <div class="information__title">Приглашаем к сотрудничеству дилеров!</div>
+          <div class="information__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+        </div>
+        <div class="information__map"></div>
+      </section>
     </main>
     <footer>
       <div class="footer__logo">
